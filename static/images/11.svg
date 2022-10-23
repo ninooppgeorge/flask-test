@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <g id="_11" data-name="11" transform="translate(1818 -2234)">
+    <circle id="Ellipse_28" data-name="Ellipse 28" cx="100" cy="100" r="100" transform="translate(-1818 2234)" fill="#16161d"/>
+    <g id="pie-chart" transform="translate(-1783.607 2268.404)">
+      <path id="Path_87" data-name="Path 87" d="M196.806,87.106h-3.843v53.207l-31.548,42.766,3.09,2.282a54.437,54.437,0,1,0,32.3-98.255Z" transform="translate(-120.043 -64.787)" fill="#2ff0ac"/>
+      <path id="Path_88" data-name="Path 88" d="M15.713,118.691a72.9,72.9,0,0,0-8.745,11.8,54.431,54.431,0,0,0,5.274,61.016,69.219,69.219,0,0,0,12.993,11.725L59.65,156.586Z" transform="translate(0 -88.278)" fill="#6d33f6"/>
+      <path id="Path_89" data-name="Path 89" d="M121.261,0C113.35,0,105.823.776,98.53,4.119S85.73,12.66,80.563,18.653l40.7,35.1Z" transform="translate(-59.909)" fill="#6d33f6"/>
+    </g>
+  </g>
+</svg>

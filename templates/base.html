@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Management System | Home</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="SHORTCUT ICON" href="/static/images/logo.png" />
+</head>
+
+<body>
+    <!--Preloader-->
+    <div class="preloader-container">
+        <div class="loader"></div>
+    </div>
+
+    <!--Navigation-->
+
+    <nav>
+        <div class="logo">
+            <a href="/"><img src="/static/images/logo.png" alt="Logo Image"></a>
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+
+            <li class="{% if url_for(request.endpoint) == '/' %}selected{% endif %}"><a href="/">Home</a></li>
+            <li class="{% if url_for(request.endpoint) == '/contact' %}selected{% endif %}"><a href="/contact">About Us</a></li>
+            <li class="{% if url_for(request.endpoint) == '/product' %}selected{% endif %}"><a href="/product">Products</a></li>
+            <li><a id="docs" href="/#buy_cont">BUY</a></li>
+
+
+        </ul>
+    </nav>
+    
+
+    {% block content %} {% endblock %}
+
+    <div class="footer">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="56" height="96" viewBox="0 0 171 171"
+            style=" fill:#000000;">
+            <defs>
+                <linearGradient x1="25.63575" y1="24.30338" x2="140.619" y2="121.31737" gradientUnits="userSpaceOnUse"
+                    id="color-1_KJUt05bD3WA3_gr1">
+                    <stop offset="0" stop-color="#a1aab3"></stop>
+                    <stop offset="1" stop-color="#8f979e"></stop>
+                </linearGradient>
+                <linearGradient x1="85.5" y1="128.20369" x2="85.5" y2="149.66775" gradientUnits="userSpaceOnUse"
+                    id="color-2_KJUt05bD3WA3_gr2">
+                    <stop offset="0" stop-color="#a1aab3"></stop>
+                    <stop offset="1" stop-color="#8f979e"></stop>
+                </linearGradient>
+                <linearGradient x1="85.5" y1="128.21794" x2="85.5" y2="142.5285" gradientUnits="userSpaceOnUse"
+                    id="color-3_KJUt05bD3WA3_gr3">
+                    <stop offset="0" stop-color="#484b4f"></stop>
+                    <stop offset="0.028" stop-color="#565b61"></stop>
+                    <stop offset="0.066" stop-color="#626a72"></stop>
+                    <stop offset="0.114" stop-color="#6b757d"></stop>
+                    <stop offset="0.181" stop-color="#717b84"></stop>
+                    <stop offset="0.367" stop-color="#727d86"></stop>
+                </linearGradient>
+                <radialGradient cx="153.03787" cy="121.8491" r="123.09506" gradientUnits="userSpaceOnUse"
+                    id="color-4_KJUt05bD3WA3_gr4">
+                    <stop offset="0" stop-color="#9e6fd9"></stop>
+                    <stop offset="0.173" stop-color="#aa73c7"></stop>
+                    <stop offset="0.522" stop-color="#ca7f97"></stop>
+                    <stop offset="1" stop-color="#fc914d"></stop>
+                </radialGradient>
+            </defs>
+            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                style="mix-blend-mode: normal">
+                <path d="M0,171.99231v-171.99231h171.99231v171.99231z" fill="none"></path>
+                <g>
+                    <path
+                        d="M153.1875,128.25h-135.375c-3.91875,0 -7.125,-3.20625 -7.125,-7.125v-92.625c0,-3.91875 3.20625,-7.125 7.125,-7.125h135.375c3.91875,0 7.125,3.20625 7.125,7.125v92.625c0,3.91875 -3.20625,7.125 -7.125,7.125z"
+                        fill="url(#color-1_KJUt05bD3WA3_gr1)"></path>
+                    <path
+                        d="M117.5625,142.5v-14.25h-64.125v14.25l-53.4375,-1.06875v4.63125c0,2.1375 1.425,3.5625 3.5625,3.5625h163.875c2.1375,0 3.5625,-1.425 3.5625,-3.5625v-4.63125z"
+                        fill="url(#color-2_KJUt05bD3WA3_gr2)"></path>
+                    <path
+                        d="M170.64375,140.71875l-10.33125,-10.33125c-1.425,-1.425 -3.20625,-2.1375 -4.9875,-2.1375h-139.65c-1.78125,0 -3.5625,0.7125 -4.9875,2.1375l-10.33125,10.33125c-0.7125,0.7125 -0.35625,1.78125 0.7125,1.78125h60.91875c1.425,0 2.49375,-0.7125 3.20625,-2.1375l1.425,-3.20625c0.7125,-1.06875 1.78125,-2.1375 3.20625,-2.1375h31.35c1.425,0 2.49375,0.7125 3.20625,2.1375l1.425,3.20625c0.7125,1.06875 1.78125,2.1375 3.20625,2.1375h60.91875c1.06875,0 1.425,-1.06875 0.7125,-1.78125z"
+                        fill="url(#color-3_KJUt05bD3WA3_gr3)"></path>
+                    <path id="tab" d="M153.1875,28.5h-135.375v92.625h135.375z" fill="url(#color-4_KJUt05bD3WA3_gr4)">
+                    </path>
+                </g>
+            </g>
+        </svg>
+        <h3>Developed By Talal AlFaqih and Abdulaziz AlSalem</h3>
+        <h1>Risk Management System | CYS501</h1>
+    </div>
+
+
+    <!--Pre Loader-->
+    <script>
+        $(window).on("load", function () {
+            $(".preloader-container").fadeOut(1000);
+        });
+    </script>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        const links = document.querySelectorAll(".nav-links li");
+
+        hamburger.addEventListener('click', () => {
+            //Animate Links
+            navLinks.classList.toggle("open");
+            links.forEach(link => {
+                link.classList.toggle("fade");
+            });
+
+            //Hamburger Animation
+            hamburger.classList.toggle("toggle");
+        });
+    </script>
+
+
+
+</body>
+
+</html>
